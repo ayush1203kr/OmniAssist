@@ -107,25 +107,7 @@ python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 
 pip install -r requirements.txt
-```
-
-## Environment setup
-
-1. Copy the example env file and add your OpenAI API key
-   (get one at <https://platform.openai.com/api-keys>):
-
-   ```bash
-   cp .env.example .env
-   ```
-
-   ```
-   OPENAI_API_KEY=sk-...your-key...
-   ```
-
-2. That's it. `.env` is gitignored — never commit it. Optional variables:
-   `OPENAI_BASE_URL` (any OpenAI-compatible endpoint), `OPENAI_MODEL`, `OPENAI_TEMPERATURE`.
-
-NLTK data (tokenizers + stopwords) is downloaded automatically on first use.
+``` 
 
 ## RAG ingestion
 
