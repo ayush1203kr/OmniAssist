@@ -1,0 +1,7 @@
+Account Policy
+
+Customers can change their account email and password from account settings.
+
+Password reset links are sent to the registered email address.
+
+Customers should contact support if they lose access to their registered email.
