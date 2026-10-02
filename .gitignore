@@ -8,5 +8,5 @@ __pycache__/
 venv/
 .pytest_cache/
 
-# Generated vector database (rebuild it with: python scripts/ingest.py)
+# Generated vector database
 chroma_db/
