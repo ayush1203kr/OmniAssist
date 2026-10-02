@@ -20,7 +20,6 @@ def policy_search(query: str) -> str:
     return retrieve_policy(query)
 
 
-# In-memory demo data — swap for a real database later without touching the agent.
 ORDERS = {
     "ORD1001": "Shipped",
     "ORD1002": "Processing",
@@ -39,8 +38,6 @@ def order_status(order_id: str) -> str:
     return f"Order {order_id} status: {status}"
 
 
-# Calculator: only numbers and + - * / ( ) are ever evaluated. We parse the
-# expression into a syntax tree and walk it ourselves, so no raw eval() happens.
 _ALLOWED_BINOPS = {
     ast.Add: operator.add,
     ast.Sub: operator.sub,
@@ -67,7 +64,7 @@ def _safe_eval_node(node: ast.AST) -> float:
 def calculator(expression: str) -> str:
     """Evaluate a basic arithmetic expression with +, -, * and /. Example input: '125 * 8'."""
     try:
-        tree = ast.parse(expression, mode="eval")  # parse first, never eval raw text
+        tree = ast.parse(expression, mode="eval")
         return f"{expression} = {_safe_eval_node(tree.body)}"
     except (SyntaxError, ValueError, ZeroDivisionError) as exc:
         return f"Could not calculate '{expression}': {exc}"
