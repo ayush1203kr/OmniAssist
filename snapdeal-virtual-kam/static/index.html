@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Snapdeal Virtual KAM | Seller Growth Call</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">S</span><span>SELLER SUCCESS <small>VIRTUAL KAM</small></span></div>
+    <div class="demo-label"><span></span> SYNTHETIC DEMO DATA</div>
+  </header>
+  <main class="layout">
+    <section class="intro">
+      <div class="eyebrow">AI-FIRST SELLER EXPERIENCE</div>
+      <h1>Let's get your<br><em>sales growing.</em></h1>
+      <p>Your AI account manager reviews your business signals, finds the biggest blockers and agrees on the next best actions with you.</p>
+      <div class="seller-chip"><div class="avatar">UN</div><div><strong id="sellerName">UrbanNest Home</strong><small id="sellerMeta">Home &amp; Kitchen · Demo seller</small></div><span class="live-dot"></span></div>
+      <div class="call-card">
+        <div class="call-head"><div><span class="eyebrow">VOICE SESSION</span><h2 id="callStatus">Ready when you are</h2></div><div class="wave" id="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="transcript" id="transcript"><div class="empty-state">Start a call and tell me what is happening with your sales. Try: “My sales have dropped this month.”</div></div>
+        <div class="voice-controls">
+          <button class="mic-button" id="micButton" aria-label="Start voice call"><span>●</span></button>
+          <div class="mic-copy"><strong id="micTitle">Start voice call</strong><small id="micHint">Allow microphone access when prompted</small></div>
+          <button class="stop-button" id="stopButton" disabled>End call</button>
+        </div>
+        <div class="text-fallback"><input id="messageInput" placeholder="Or type what you would say..." maxlength="1000"><button id="sendButton">Send</button></div>
+        <p class="privacy-note">Microphone audio is processed by your browser's speech service. This prototype does not save audio.</p>
+      </div>
+    </section>
+    <section class="insights">
+      <div class="section-heading"><div><div class="eyebrow">SELLER HEALTH CHECK</div><h2>The business, at a glance.</h2></div><span class="period">LAST 30 DAYS vs PREVIOUS 30</span></div>
+      <div class="metric-grid" id="metrics"></div>
+      <div class="diagnosis-card">
+        <div class="card-title"><span class="status-icon">!</span><div><strong>What needs attention</strong><small>Prioritized from seller signals</small></div></div>
+        <div id="signals" class="signals"></div>
+      </div>
+      <div class="actions-card">
+        <div class="card-title"><span class="target-icon">↗</span><div><strong>Your recovery action plan</strong><small>Practical steps, not generic advice</small></div></div>
+        <div id="actions" class="actions"></div>
+        <div class="commit-box"><label for="commitmentInput">SELLER COMMITMENT</label><div><input id="commitmentInput" placeholder="e.g. Restock the top 2 products today"><button id="commitButton">Confirm</button></div><small id="commitStatus">Agree on one action to start today.</small></div>
+      </div>
+      <div class="call-summary" id="callSummary"><div class="eyebrow">CALL SUMMARY</div><p>Your summary and agreed next steps will appear here after the conversation.</p></div>
+    </section>
+  </main>
+  <footer>Independent assignment prototype · Not affiliated with or connected to Snapdeal internal systems</footer>
+  <script src="/static/app.js"></script>
+</body>
+</html>
